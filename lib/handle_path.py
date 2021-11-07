@@ -7,14 +7,24 @@ path_now = "/".join(dirs)
 
 
 def open_dir(number_dir):
-    global path_now
+    try:
+        global path_now
 
-    list_dir = listdir(path_now)
-    new_dir = list_dir[number_dir]
+        list_dir = listdir(path_now)
+        new_dir = list_dir[number_dir]
 
-    dirs.append(new_dir)
+        if not path.isdir(f"{path_now}/{new_dir}"):
+            raise NotADirectoryError()
 
-    path_now = '/'.join(dirs)
+        dirs.append(new_dir)
+
+        path_now = '/'.join(dirs)
+
+    except NotADirectoryError:
+        print()
+        print(Fore.RED + "-------- El elemento seleccionado no es un Directorio")
+        print()
+
 
 
 def exit_dir():
@@ -37,5 +47,6 @@ def show_this_dir():
             print(list_dir.index(elements), Fore.WHITE + elements, "(Not)")
 
     print()
-    print(Fore.YELLOW + Style.BRIGHT + f"------- Directorio Actual: {path_now}")
+    print(Fore.YELLOW + Style.BRIGHT +
+          f"------- Directorio Actual: {path_now}")
     print()
