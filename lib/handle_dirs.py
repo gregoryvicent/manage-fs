@@ -9,7 +9,11 @@ def create_dir():
     final_address = f"{print_path()}/{new_element}"
 
     if new_element[-1] == "/":
-        mkdir(final_address)
+        try:
+            mkdir(final_address)
+        except FileExistsError:
+            print()
+            print(Fore.RED + "------------ Este elemento ya existe!!!")
     else:
         file = open(final_address, "w")
         file.close()
@@ -20,7 +24,6 @@ def delete_dir():
     dir_elements = listdir(print_path())
     element = dir_elements[element_remove]
     final_address = f"{print_path()}/{element}"
-
 
     if path.isdir(final_address):
         rmdir(final_address)

@@ -19,7 +19,7 @@ def choose_option():
         show_interface()
     elif get_action == "4":
         delete_dir()
-        show_interface() 
+        show_interface()
     else:
         print()
         print(Fore.RED + "¡¡¡¡¡Opcion no valida!!!!!")
