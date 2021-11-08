@@ -6,6 +6,10 @@ dirs = getcwd().split("/")
 path_now = "/".join(dirs)
 
 
+def print_path():
+    return path_now
+
+
 def open_dir(number_dir):
     try:
         global path_now
@@ -24,7 +28,6 @@ def open_dir(number_dir):
         print()
         print(Fore.RED + "-------- El elemento seleccionado no es un Directorio")
         print()
-
 
 
 def exit_dir():

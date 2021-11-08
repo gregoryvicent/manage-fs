@@ -1,3 +1,3 @@
-num = ["perro", "gato", "pato"]
+word = "Hola"
 
-print("/".join(num) + "/Orca")
+print(word[-1])
