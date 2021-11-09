@@ -8,6 +8,10 @@ Adicionalmente se implemento la librería “Colorama” que nos permite imprimi
 
 Es importante entender que los fines de este proyecto son meramente educativos para el aprendizaje y desarrollo de las habilidades en Python con la creación de una aplicación practica de consola.
 
+### La carpeta "test":
+
+Esta carpeta tiene como objetivo ser un lugar de pruebas seguro para poder visualizar, crear y eliminar de forma segura ficheros y directorios sin comprometer nada importante en nuestro sistema.
+
 ## Tecnologías Usadas:
 
 - **Python**
