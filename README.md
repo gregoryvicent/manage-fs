@@ -10,6 +10,6 @@ Es importante entender que los fines de este proyecto son meramente educativos p
 
 ## Tecnologías Usadas:
 
-- Python
+- **Python**
 
 ## Para inicializar el proyecto:
