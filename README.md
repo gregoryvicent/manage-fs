@@ -13,3 +13,21 @@ Es importante entender que los fines de este proyecto son meramente educativos p
 - **Python**
 
 ## Para inicializar el proyecto:
+
+1. Clonar el repositorio e ingresar en él.
+2. Crear un entorno de trabajo para python (Comando para linux):
+```
+python3 -m venv <nombre del espacio de trabajo>
+```
+3. Ingresar al espacio de trabajo (Comando para linux):
+```
+source venv/bin/activate
+```
+4. Instalar las dependencias necesarias con:
+```
+pip3 install -r requirements.txt
+```
+5. Ejecutar en terminal:
+```
+python3 main.py
+```
